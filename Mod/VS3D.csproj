@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>VS3D</AssemblyName>
+    <RootNamespace>VS3D</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!-- Your game folder; override with: dotnet build -p:GameDir="D:\Steam\steamapps\common\Vampire Survivors" -->
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Vampire Survivors</GameDir>
+    <BepInExCore>$(GameDir)\BepInEx\core</BepInExCore>
+    <Interop>$(GameDir)\BepInEx\interop</Interop>
+    <PluginDir>$(GameDir)\BepInEx\plugins\VS3D</PluginDir>
+  </PropertyGroup>
+
+  <!-- Default build: VS-only (no Vampire Crawlers code path, never touches a Crawlers install).
+       The old Crawlers-kit variant is still available with: dotnet build -p:VsOnly=false -->
+  <PropertyGroup>
+    <VsOnly Condition="'$(VsOnly)' == ''">true</VsOnly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VsOnly)' == 'true'">
+    <DefineConstants>$(DefineConstants);VS_ONLY</DefineConstants>
+    <PackageDir>$(MSBuildProjectDirectory)\..\Builds\VS3D-VSOnly\BepInEx\plugins\VS3D</PackageDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VsOnly)' != 'true'">
+    <OutputPath>bin\Crawlers\</OutputPath>
+    <IntermediateOutputPath>obj\Crawlers\</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(BepInExCore)\BepInEx.Core.dll" Private="false" />
+    <Reference Include="$(BepInExCore)\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="$(BepInExCore)\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="$(BepInExCore)\Il2CppInterop.Common.dll" Private="false" />
+    <Reference Include="$(BepInExCore)\0Harmony.dll" Private="false" />
+    <Reference Include="$(Interop)\*.dll" Exclude="$(Interop)\UnityEngine.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="CopyToPlugins" AfterTargets="Build">
+    <MakeDir Directories="$(PluginDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginDir)" />
+    <Copy Condition="'$(PackageDir)' != ''" SourceFiles="$(TargetPath)" DestinationFolder="$(PackageDir)" />
+    <Message Importance="high" Text="VS3D -> $(PluginDir)" />
+  </Target>
+
+</Project>

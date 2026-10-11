@@ -1,0 +1,18 @@
+{
+ "0,0:st2u_x1y377-w32h32": "tree",
+ "0,0:st2u_x35y377-w32h32": "tree",
+ "0,0:st2u_x307y445-w32h32": "flat",
+ "0,0:st2u_x307y445-w32h32;0,1:st2u_x35y377-w32h32;1,1:st2u_x307y445-w32h32;0,2:st2u_x307y445-w32h32": "standee",
+ "0,0:st2u_x307y445-w32h32;0,1:st2u_x1y377-w32h32;0,2:st2u_x307y445-w32h32": "standee",
+ "1,0:st2u_x307y445-w32h32;0,1:st2u_x35y377-w32h32;1,1:st2u_x1y377-w32h32;1,2:st2u_x307y445-w32h32": "standee",
+ "0,0:st2u_x307y445-w32h32;0,1:st2u_x35y377-w32h32": "tree",
+ "1,0:st2u_x307y445-w32h32;0,1:st2u_x307y445-w32h32;1,1:st2u_x1y377-w32h32;0,2:st2u_x35y377-w32h32;1,2:st2u_x307y445-w32h32;0,3:st2u_x1y377-w32h32": "standee",
+ "0,0:st2u_x307y445-w32h32;0,1:st2u_x307y445-w32h32": "flat",
+ "3,0:st2u_x307y445-w32h32;2,1:st2u_x307y445-w32h32;3,1:st2u_x35y377-w32h32;1,2:st2u_x307y445-w32h32;2,2:st2u_x1y377-w32h32;0,3:st2u_x307y445-w32h32;1,3:st2u_x307y445-w32h32;0,4:st2u_x35y377-w32h32": "standee",
+ "0,0:st2u_x35y377-w32h32;1,0:st2u_x35y377-w32h32": "tree",
+ "1,0:st2u_x1y377-w32h32;0,1:st2u_x35y377-w32h32;1,1:st2u_x307y445-w32h32;0,2:st2u_x1y377-w32h32": "standee",
+ "0,0:st2u_x307y445-w32h32;0,1:st2u_x35y377-w32h32;0,2:st2u_x1y377-w32h32": "standee",
+ "0,0:st2u_x307y445-w32h32;1,0:st2u_x307y445-w32h32;0,1:st2u_x35y377-w32h32": "tree",
+ "1,0:st2u_x307y445-w32h32;2,0:st2u_x1y377-w32h32;0,1:st2u_x307y445-w32h32;1,1:st2u_x307y445-w32h32;0,2:st2u_x35y377-w32h32": "standee",
+ "0,0:st2u_x307y445-w32h32;1,0:st2u_x1y377-w32h32": "tree"
+}

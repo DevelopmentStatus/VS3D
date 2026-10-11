@@ -1,0 +1,8 @@
+{
+ "0,0:st2u_x307y377-w32h32": "table",
+ "0,0:st2u_x205y309-w32h32;1,0:st2u_x239y309-w32h32": "bookshelf",
+ "0,0:st2u_x375y445-w32h32;1,0:st2u_x409y445-w32h32;2,0:st2u_x443y445-w32h32": "piano",
+ "0,0:st2u_x205y309-w32h32;1,0:st2u_x239y309-w32h32;2,0:st2u_x171y309-w32h32;0,1:st2u_x341y309-w32h32;1,1:st2u_x375y309-w32h32;2,1:st2u_x409y309-w32h32;0,2:st2u_x341y343-w32h32;1,2:st2u_x375y343-w32h32;2,2:st2u_x409y343-w32h32": "bookshelf",
+ "0,0:st2u_x171y309-w32h32;1,0:st2u_x205y309-w32h32;2,0:st2u_x239y309-w32h32;0,1:st2u_x375y309-w32h32;1,1:st2u_x409y309-w32h32;2,1:st2u_x341y309-w32h32;0,2:st2u_x375y343-w32h32;1,2:st2u_x409y343-w32h32;2,2:st2u_x341y343-w32h32": "bookshelf",
+ "0,0:st2u_x273y411-w32h32;1,0:st2u_x307y411-w32h32;2,0:st2u_x341y411-w32h32": "table"
+}

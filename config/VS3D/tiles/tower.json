@@ -1,0 +1,6 @@
+{
+ "0,0:st2u_x409y445-w32h32;0,1:st2u_x409y479-w32h32": "statue",
+ "0,0:st2u_x171y343-w32h32;1,0:st2u_x205y343-w32h32;2,0:st2u_x239y343-w32h32;3,0:st2u_x409y343-w32h32": "standee",
+ "0,0:st2u_x409y343-w32h32": "standee",
+ "0,0:st2u_x171y343-w32h32;1,0:st2u_x205y343-w32h32;2,0:st2u_x239y343-w32h32;0,1:st2u_x171y377-w32h32;1,1:st2u_x205y377-w32h32;2,1:st2u_x239y377-w32h32": "fireplace"
+}
