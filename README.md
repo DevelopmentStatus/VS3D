@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/5604f3ff-eaba-4005-a6e3-44d988fe8612
+
 # VS3D – Third-Person Renderer for Vampire Survivors
 
 A BepInEx mod that adds a third-person (and first-person) 3D view to Vampire Survivors. Each stage is rebuilt in 3D from the game's own art: floors become the ground, wall art is stood up as walls, pits are sunk into the floor, and props, characters, enemies and pickups are drawn as camera-facing billboards. Gameplay is unchanged; F8 switches back to the original 2D view at any time.
