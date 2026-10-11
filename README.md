@@ -44,6 +44,10 @@ The `vs3d_core` asset bundle (ground texture) shipped in the release zip is buil
 - `Mod/Rendering`: billboards, health bar, ground and the stage rebuild (`Stage/CellClassifier.cs` decides what is wall, pit, prop or floor)
 - `config/VS3D/tiles`: per-map obstacle classes
 
+## License
+
+The mod's code is released under the [MIT License](LICENSE). This covers the code in this repository only, not Vampire Survivors or its art.
+
 ## Disclaimer
 
 VS3D is a fan-made mod and is not affiliated with poncle. Vampire Survivors and its art belong to poncle. This repository contains no game files; all art is read from your own installation at runtime.
